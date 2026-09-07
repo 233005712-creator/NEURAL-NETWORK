@@ -1,14 +1,7 @@
 # Bank Marketing Term Deposit Prediction
 
 ## Problem Statement
-Build a Logistic Regression model to predict whether a bank customer will subscribe to a term deposit (`yes`) or not (`no`) using demographic, account, and campaign information.
-
-## Dataset
-- Records: 45,211
-- Attributes: 17
-- Target: `y`
-- `yes` = subscribed
-- `no` = did not subscribe
+Build a Logistic Regression model to predict whether a bank customer will subscribe to a term deposit (`yes`) or not (`no`) using demographic, account, and campaign information
 
 ## Approach
 1. Loaded `bank-full.csv` using Pandas with `;` as the separator.
@@ -20,22 +13,6 @@ Build a Logistic Regression model to predict whether a bank customer will subscr
 7. Used an 80/20 stratified train-test split.
 8. Trained a Logistic Regression classifier with `class_weight="balanced"` because the target classes are imbalanced.
 9. Evaluated the model using Accuracy, Precision, Recall, F1-score, ROC-AUC, and a confusion matrix.
-
-## Results
-
-| Metric | Score |
-|---|---:|
-| Accuracy | 84.57% |
-| Precision | 41.82% |
-| Recall | 81.47% |
-| F1 Score | 55.27% |
-| ROC-AUC | 90.79% |
-
-### Confusion Matrix
-```
-[[6786 1199]
- [ 196  862]]
-```
 
 ## Findings
 The model achieved an accuracy of approximately 84.57%. The ROC-AUC of approximately 90.79% indicates strong discrimination between subscribers and non-subscribers.
