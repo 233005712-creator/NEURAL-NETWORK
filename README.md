@@ -28,8 +28,3 @@ Because the dataset is imbalanced, accuracy alone is not sufficient; recall, F1-
 - Consider excluding `duration` for a true pre-contact prediction scenario because call duration is only known after a customer contact.
 - Explore feature importance and model interpretability.
 
-## How to Run
-```bash
-pip install -r requirements.txt
-python logistic_regression.py
-```
