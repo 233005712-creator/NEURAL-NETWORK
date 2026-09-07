@@ -3,12 +3,8 @@
 ## Problem Statement
 Build a Logistic Regression model to predict whether a bank customer will subscribe to a term deposit (`yes`) or not (`no`) using demographic, account, and campaign information.
 
-## Dataset
-- Records: 45,211
-- Attributes: 17
-- Target: `y`
-- `yes` = subscribed
-- `no` = did not subscribe
+## Methodology
+The methodology consists of data loading and inspection, target encoding, feature preprocessing, stratified train-test splitting, Logistic Regression model training, and model evaluation using classification metrics and a confusion matrix.
 
 ## Approach
 1. Loaded `bank-full.csv` using Pandas with `;` as the separator.
